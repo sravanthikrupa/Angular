@@ -1,0 +1,28 @@
+<p>all-developers works!</p>
+<div class="card-body pt-0">
+    <table class="table table-bordered">
+
+    <tr>
+        <th>DevName</th>
+        <th>DevId</th>
+        <th>Accuracy </th>
+        <th>SkillLevel</th>
+        <th>Mobile</th>
+        <th>Email</th>
+    </tr>
+    
+    <tr *ngFor="let item of getAllStudents()">
+
+      
+        <td> {{item.DevName | uppercase}} </td>
+        <td> {{item.DevId}} </td>
+        <td> {{item.Accuracy}} </td>
+        <td> {{item.SkillLevel}} </td>
+        <td> {{item.mobile }} </td>
+        <td> {{item.Email}} </td>
+        <td> <button (click)="addfee()">pay fee </button> </td>  
+     
+    
+    </tr>
+    </table>
+    </div>
